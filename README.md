@@ -9,3 +9,10 @@ This makes use of `MKLookAroundSnapshotter` and `MKMapSnapshotter` to make snaps
 It's also cross platform.
 
 ![](Snapshots/DesktopSnapshot.png) ![](Snapshots/MobileSnapshot.png)
+
+<table>
+  <tr>
+    <td><img src="Snapshots/DesktopSnapshot.png"></td>
+    <td><img src="Snapshots/MobileSnapshot.png"></td>
+   </tr> 
+</table>
