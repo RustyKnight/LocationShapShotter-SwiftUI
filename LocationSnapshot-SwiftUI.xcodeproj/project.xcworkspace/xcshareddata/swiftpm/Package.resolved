@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "cadmus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RustyKnight/Cadmus",
+      "state" : {
+        "revision" : "f2d1d470016ad4e440517e6208c62fc9e3bc066d",
+        "version" : "3.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
