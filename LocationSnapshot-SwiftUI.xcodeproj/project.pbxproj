@@ -22,6 +22,7 @@
 		70082B0A2B5A30AF00FA7B52 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70082B092B5A30AF00FA7B52 /* Assets.swift */; };
 		70082B0C2B5A337D00FA7B52 /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70082B0B2B5A337D00FA7B52 /* ErrorAlert.swift */; };
 		70082B0E2B5A33A400FA7B52 /* OkayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70082B0D2B5A33A400FA7B52 /* OkayButton.swift */; };
+		70082B102B5B2F4100FA7B52 /* MKMapSnapshotterSnapshot+DropPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70082B0F2B5B2F4100FA7B52 /* MKMapSnapshotterSnapshot+DropPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		70082B092B5A30AF00FA7B52 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		70082B0B2B5A337D00FA7B52 /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlert.swift; sourceTree = "<group>"; };
 		70082B0D2B5A33A400FA7B52 /* OkayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkayButton.swift; sourceTree = "<group>"; };
+		70082B0F2B5B2F4100FA7B52 /* MKMapSnapshotterSnapshot+DropPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapSnapshotterSnapshot+DropPin.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			children = (
 				70082B022B5A072A00FA7B52 /* Color+Platform.swift */,
 				70082B052B5A10BF00FA7B52 /* NSImage+Graphics.swift */,
+				70082B0F2B5B2F4100FA7B52 /* MKMapSnapshotterSnapshot+DropPin.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				70082B0E2B5A33A400FA7B52 /* OkayButton.swift in Sources */,
 				70082B062B5A10BF00FA7B52 /* NSImage+Graphics.swift in Sources */,
 				70082B0C2B5A337D00FA7B52 /* ErrorAlert.swift in Sources */,
+				70082B102B5B2F4100FA7B52 /* MKMapSnapshotterSnapshot+DropPin.swift in Sources */,
 				70082B032B5A072A00FA7B52 /* Color+Platform.swift in Sources */,
 				70082B002B5A039900FA7B52 /* StokeModifier.swift in Sources */,
 			);

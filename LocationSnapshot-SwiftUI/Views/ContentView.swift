@@ -24,7 +24,7 @@ struct ContentView: View {
         }
         .task {
             guard let location = locationManager.location else { return }
-            log(debug: "locationManager.location = \(locationManager.location)")
+            log(debug: "locationManager.location = \(String(describing: locationManager.location))")
             do {
                 async let snapShot: Void = loadMapSnapshot(location)
                 async let streetView: Void = loadStreetViewAt(location)
@@ -126,51 +126,12 @@ struct ContentView: View {
         options.preferredConfiguration = config
         
         let snapshot = try await MKMapSnapshotter(options: options).start()
-        let snapshotImage = snapshot.image
-        let coordinatePoint = snapshot.point(for: location.coordinate)
         
-        // This could form part of an extensionm or utility
-        // feature to help reduce the amount of code been
-        // generated here
-        
-        #if os(macOS)
-        let mapImage = NSImage(size: snapshotImage.size) { ctx in
-            snapshotImage.draw(
-                at: .zero,
-                from: NSRect(origin: .zero, size: snapshotImage.size),
-                operation: .sourceOver,
-                fraction: 1.0
+        mapSnaphot = snapshot
+            .drawDropPin(
+                Assets.beerPin,
+                at: snapshot.point(for: location.coordinate)
             )
-            
-            let pinImage = Assets.beerPin
-
-            let fixedPinPoint = CGPoint(
-                x: coordinatePoint.x - pinImage.size.width / 2,
-                y: coordinatePoint.y - pinImage.size.height
-            )
-            pinImage.draw(
-                at: fixedPinPoint,
-                from: NSRect(origin: .zero, size: snapshotImage.size),
-                operation: .sourceOver,
-                fraction: 1.0
-            )
-        }
-        
-        mapSnaphot = Image(nsImage: mapImage)
-        #elseif os(iOS)
-        let renderer = UIGraphicsImageRenderer(size: snapshotImage.size)
-        let mapImage = renderer.image(actions: { ctx in
-            snapshotImage.draw(at: CGPoint.zero)
-            let pinImage = Assets.beerPin
-            pinImage.draw(
-                at: CGPoint(
-                    x: coordinatePoint.x - pinImage.size.width / 2,
-                    y: coordinatePoint.y - pinImage.size.height
-                )
-            )
-        })
-        mapSnaphot = Image(uiImage: mapImage)
-        #endif
     }
 }
 
