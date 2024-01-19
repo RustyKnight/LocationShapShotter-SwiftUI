@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 import SwiftUI
 
-// An image which decouples the rendering of a "drop pin" into
+// An extension which decouples the rendering of a "drop pin" into
 // a snap shot image.  It also reduces the amount of additional
 // code which gets crammed into a View
 extension MKMapSnapshotter.Snapshot {
