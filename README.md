@@ -1,6 +1,6 @@
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange) ![iOS](https://img.shields.io/badge/iOS-17.0-orange) ![macOS](https://img.shields.io/badge/iOS-14.0-orange)
 
-# LocationSnapshooter - SwiftUI
+# LocationSnapshotter - SwiftUI
 
 A re-implementation of [LocationShapShooter](https://github.com/RustyKnight/LocationShapShooter) in SwiftUI.
 
