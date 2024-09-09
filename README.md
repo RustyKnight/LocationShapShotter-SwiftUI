@@ -2,7 +2,7 @@
 
 # LocationSnapshotter - SwiftUI
 
-A re-implementation of [LocationShapShotter](https://github.com/RustyKnight/LocationShapShotter) in SwiftUI.
+A re-implementation of [LocationSnapShotter](https://github.com/RustyKnight/LocationShapShotter) in SwiftUI.
 
 This makes use of `MKLookAroundSnapshotter` and `MKMapSnapshotter` to make snapshots of the current location.  It also draws a pin on the `MKMapSnapshotter` resulting image.
 
